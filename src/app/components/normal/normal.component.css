@@ -1,0 +1,16 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#container {
+    width: 1010px;
+    height: 500px;
+    position: relative;
+    user-select: none !important;
+}
+#powerBiFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

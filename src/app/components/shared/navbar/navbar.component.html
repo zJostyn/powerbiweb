@@ -1,0 +1,50 @@
+<body>
+    <mat-sidenav-container class="example-container">
+        <mat-sidenav #sidenav="matSidenav" mode="side" opened>
+            <div>
+                <img class="avatar" src="assets/logo.png" [routerLink]="[ 'inicio'] ">
+            </div>
+            <mat-divider></mat-divider>
+            <button mat-button class="menu-button " [routerLink]="[ 'inicio'] " routerLinkActive="active-link ">
+                <mat-icon>home</mat-icon>
+                <span>Inicio</span>
+            </button>
+            <button mat-button class="menu-button " [routerLink]="[ 'mapa'] ">
+                <mat-icon>map</mat-icon>
+                <span>Mapa</span>
+            </button>
+            <button mat-button class="menu-button " [routerLink]="[ 'prediccion'] ">
+                <mat-icon>assessment</mat-icon>
+                <span>Prediccion Utilidad</span>
+            </button>
+            <button mat-button class="menu-button " [routerLink]="[ 'inversion'] ">
+                <mat-icon>credit_card</mat-icon>
+                <span>Inversion</span>
+            </button>
+            <button mat-button class="menu-button " [routerLink]="[ 'empresa'] ">
+                <mat-icon>layers</mat-icon>
+                <span>Empresa</span>
+            </button>
+            <button mat-button class="menu-button " [routerLink]="[ 'utilidad'] ">
+                <mat-icon>restore</mat-icon>
+                <span>Utilidad Piscina</span>
+            </button>
+            <button mat-button class="menu-button " [routerLink]="[ 'margen'] ">
+                <mat-icon>report_problem</mat-icon>
+                <span>Margen Utilidad</span>
+            </button>
+            <button mat-button class="menu-button " [routerLink]="[ 'normal'] ">
+                <mat-icon>dashboard</mat-icon>
+                <span>PowerBI Completo</span>
+            </button>
+            <mat-divider></mat-divider>
+            <span>Jostyn Cruz</span>
+
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="content">
+                <router-outlet></router-outlet>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</body>
